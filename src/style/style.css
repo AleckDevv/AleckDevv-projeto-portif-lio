@@ -7,6 +7,7 @@
 
 :root {
     --font-color: #000;
+    --font-color-second: #fff;
     --color-btn: #6E07F4;
 }
 
@@ -19,6 +20,7 @@
     margin: auto;
     padding: 3rem;
 }
+
 .logo img {
     width: 2.6rem;
 }
@@ -37,28 +39,55 @@
 .btn {
     border: 2px solid var(--color-btn);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: all .7s ease-in-out;
 }
 
-.menu_hamburger .span_menu{
+.btn:hover {
+    background-color: var(--color-btn);
+    color: var(--font-color-second);
+}
+
+.menu_hamburger .span_menu {
     display: flex;
     flex-direction: column;
 }
+
 .span_menu span {
     width: 30px;
-    border: 2px solid #000;
+    border: 2px solid var(--font-color);
     margin: 2.2px;
     cursor: pointer;
 }
 
+.hero_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.avatar img {
+    width: 180px;
+}
+
+.dispositivos img {
+    width: 900px;
+}
+
+/* 
+Responsividade
+*/
 @media (min-width: 600px) {
     .menu_hamburger {
         display: none;
     }
+
 }
 
-
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .menu {
         display: none;
     }
@@ -69,5 +98,35 @@
 
     .menu_hamburger {
         display: block;
+    }
+
+    .hero_area {
+        gap: 20px;
+    }
+
+    .hero_area h1 {
+        font-size: 2rem;
+    }
+
+    .hero_area p {
+        font-size: 1.4rem;
+    }
+
+    .dispositivos img {
+        width: 700px;
+    }
+}
+
+@media (max-width: 429px) {
+    .hero_area {
+        gap: 20px;
+    }
+
+    .avatar img {
+        width: 100px;
+    }
+
+    .dispositivos img {
+        width: 300px;
     }
 }
