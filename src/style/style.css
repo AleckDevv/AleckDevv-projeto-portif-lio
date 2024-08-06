@@ -77,6 +77,28 @@
     width: 900px;
 }
 
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 30px;
+    background-color: var(--color-btn);
+    color: var(--font-color-second);
+}
+
+.desc2 {
+    text-align: justify;
+    max-width: 30rem;
+    flex-wrap: wrap;
+}
+
+.desc2 p {
+    line-height: 2rem;
+}
+
+
 /* 
 Responsividade
 */
