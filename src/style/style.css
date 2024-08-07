@@ -11,6 +11,10 @@
     --color-btn: #6E07F4;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -41,6 +45,7 @@
     padding: 10px;
     border-radius: 15px;
     transition: all .7s ease-in-out;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -74,7 +79,7 @@
 }
 
 .dispositivos img {
-    width: 900px;
+    width: 700px;
 }
 
 .sobre {
@@ -192,6 +197,24 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.empresas h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.empresas_trabalhadas {
+    border-top: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 0;
+}
+
+.empresas_trabalhadas img {
+    width: 330px;
+    cursor: pointer;
+}
+
 /* 
 Responsividade
 */
@@ -234,6 +257,11 @@ Responsividade
     .dispositivos img {
         width: 700px;
     }
+
+    .empresas_trabalhadas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 429px) {
@@ -259,6 +287,11 @@ Responsividade
     }
 
     .trabalhos_feitos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empresas_trabalhadas {
         display: flex;
         flex-direction: column;
     }
