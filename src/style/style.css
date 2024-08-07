@@ -283,6 +283,10 @@ Responsividade
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .colaboracao p {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 429px) {
@@ -315,5 +319,9 @@ Responsividade
     .empresas_trabalhadas {
         display: flex;
         flex-direction: column;
+    }
+
+    .colaboracao h2 {
+        font-size: 1.3rem;
     }
 }
