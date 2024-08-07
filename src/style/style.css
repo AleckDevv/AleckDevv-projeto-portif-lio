@@ -377,7 +377,7 @@ body {
 }
 
 .cta .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
 }
 
@@ -385,6 +385,37 @@ body {
     font-size: 1.1rem;
     color: var(--font-color-second);
     text-decoration: none;
+}
+
+footer {
+    background-color: var(--color-btn);
+    color: var(--font-color-second);
+    text-align: center;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer .subtitulo {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icones img {
+    width: 2.2rem;
+    margin: 1.3rem;
+}
+
+footer p {
+    padding: .5rem;
 }
 
 /* 
