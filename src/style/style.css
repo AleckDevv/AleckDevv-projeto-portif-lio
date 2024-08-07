@@ -11,6 +11,7 @@
     --color-btn: #6E07F4;
     --color-borda: #ccc;
     --bg-imagem: #5BE9B9;
+    --bg-cta: #121A37;
 }
 
 body {
@@ -334,7 +335,57 @@ body {
 #slider-2:checked~.slider-nav .n2 {
     background-color: var(--color-btn);
 }
+
 /* Fim do slider */
+
+/* Area para  o count action*/
+.cta {
+    background-color: var(--color-btn);
+}
+
+.cta .overlay {
+    background-color: var(--font-color-second);
+    height: 6rem;
+}
+
+.cta .container {
+    margin-top: -6rem;
+}
+
+.cta .area {
+    width: 100%;
+    /* margin: 0 2rem; */
+    padding: 1rem;
+    background-color: var(--bg-cta);
+    color: var(--font-color-second);
+    border-radius: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+.cta .area-side {
+    flex: 1;
+}
+
+.cta .title {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.cta .subtitle {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.cta .btn {
+    font-size: 1.1rem;
+    color: var(--font-color-second);
+    text-decoration: none;
+}
 
 /* 
 Responsividade
@@ -423,5 +474,9 @@ Responsividade
 
     .colaboracao h2 {
         font-size: 1.3rem;
+    }
+
+    .cta .area {
+        flex-direction: column;
     }
 }
