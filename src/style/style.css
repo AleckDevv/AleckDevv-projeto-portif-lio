@@ -168,6 +168,30 @@
     font-weight: normal;
 }
 
+.trabalhos {
+    text-align: center;
+}
+
+.trabalhos h2 {
+    margin-bottom: 15px;
+}
+
+.trabalhos a {
+    color: var(--color-btn);
+}
+
+.trabalhos_feitos img {
+    width: 1rem;
+    flex: 1;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.trabalhos_feitos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* 
 Responsividade
 */
@@ -231,6 +255,11 @@ Responsividade
     }
 
     .skill ul {
+        flex-direction: column;
+    }
+
+    .trabalhos_feitos {
+        display: flex;
         flex-direction: column;
     }
 }
